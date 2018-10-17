@@ -35,7 +35,7 @@ public class Picture
         wall.moveVertical(20);
         wall.changeSize(120);
         wall.makeVisible();
-        
+
         window = new Square();
         window.changeColor("black");
         window.moveHorizontal(-120);
@@ -48,7 +48,7 @@ public class Picture
         roof.moveHorizontal(20);
         roof.moveVertical(-60);
         roof.makeVisible();
-        
+
         grass = new Square();
         grass.changeColor("green");
         grass.moveHorizontal(-310);
@@ -63,10 +63,8 @@ public class Picture
         sun.changeSize(80);
         sun.makeVisible();
         sun.slowMoveVertical(-175);
-        
-       
-    }
 
+    }
     /**
      * Change this picture to black/white display
      */
@@ -93,5 +91,14 @@ public class Picture
             roof.changeColor("green");
             sun.changeColor("yellow");
         }
+    }
+
+    /**
+     * Método atardecer
+     */
+    public void atardecer()
+    {
+
+        sun.slowMoveVertical(175);
     }
 }
